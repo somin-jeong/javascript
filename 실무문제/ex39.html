@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      let numberData = [1, "가나", true, 126, "false", 100];
+      let newData = [];
+      for (let i = 0; i < numberData.length; i++) {
+        if (typeof numberData[i] === "number") {
+          newData.push(numberData[i]);
+        }
+      }
+      numberData = newData;
+      console.log(numberData);
+    </script>
+  </head>
+  <body></body>
+</html>
