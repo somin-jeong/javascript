@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3rem;
+}
+#underline {
+  height: 0.2rem;
+  width: 4rem;
+  background: deepskyblue;
+  margin-top: 0.5rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 5rem);
+  background-color: azure;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reviews-container {
+  background-color: white;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  width: 40vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1rem;
+
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+
+#img {
+  object-fit: cover;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+}
+
+#name {
+  margin-top: 1rem;
+}
+
+#review {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pre-page,
+.next-page {
+  color: var(--clr-primary-7);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pre-next-btn {
+  margin-top: 1rem;
+}
+
+.pre-btn::before {
+  content: "\f053";
+}
+
+.next-btn::before {
+  content: "\f053";
+}
+
+#random-btn {
+  margin-top: 0.6rem;
+}

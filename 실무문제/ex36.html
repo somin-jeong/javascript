@@ -17,7 +17,9 @@
 
       let action = movies.filter((movie) => movie.genre === "액션");
       let cgv = movies.filter((movie) => movie.상영관 === "cgv");
-      let romance = movies.filter((movie) => movie.genre === "로맨스");
+      let romance = movies.filter(
+        (movie) => movie.상영관 === "cgv" && movie.genre === "로맨스"
+      );
       console.log(action);
       console.log(cgv);
       console.log(romance);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Starter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        <h1>Our Rewiews</h1>
+        <div id="underline"></div>
+      </div>
+      <div id="reviews-container">
+        <img id="img" alt="" />
+        <h4 id="name"></h4>
+        <h4 id="job"></h4>
+        <p id="review"></p>
+        <div class="pre-next-btn">
+          <button id="pre-page" onclick="preBtnFn()">
+            <i class="pre-btn"></i>
+          </button>
+          <button id="next-page" onclick="nextBtnFn()">
+            <i class="next-btn"></i>
+          </button>
+        </div>
+        <button id="random-btn" onclick="randomBtnFn()">Surprise me</button>
+      </div>
+    </div>
+  </body>
+</html>
